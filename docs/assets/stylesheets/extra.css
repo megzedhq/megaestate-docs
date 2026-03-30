@@ -1,0 +1,329 @@
+/* =========================
+   MegaClassify MkDocs Theme
+   - Brand Primary: #014FAE
+   - Header: WHITE (always)
+   - Dark mode: works (no broken light-only blocks)
+   ========================= */
+
+/* -------------------------
+   Brand Tokens + Material tokens
+   ------------------------- */
+:root {
+  --mc-primary: #014FAE;
+  --mc-primary-dark: #013B82;
+  --mc-primary-light: #2B78D6;
+
+  /* Material overrides */
+  --md-primary-fg-color: var(--mc-primary);
+  --md-primary-fg-color--dark: var(--mc-primary-dark);
+  --md-accent-fg-color: var(--mc-primary);
+}
+
+/* -------------------------
+   Global page background uses Material theme
+   ------------------------- */
+.md-main {
+  background: var(--md-default-bg-color) !important;
+  color: var(--md-default-fg-color) !important;
+}
+
+/* =========================================================
+   HEADER = WHITE (ALWAYS)  ✅ fixes your blue bar issue
+   ========================================================= */
+.md-header,
+.md-header--shadow {
+  background: #fff !important;
+  color: #0f172a !important;
+  box-shadow: 0 1px 0 rgba(2, 8, 23, 0.09) !important;
+}
+
+/* Keep header items aligned nicely */
+.md-header__inner {
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+/* Logo size */
+.md-header__button.md-logo img {
+  height: 54px;
+}
+
+/* Title + all header icons must be dark on white header */
+.md-header__title,
+.md-header__button,
+.md-header__button .md-icon,
+.md-header__button svg {
+  color: #0f172a !important;
+  fill: currentColor !important;
+}
+
+/* Hover accent */
+.md-header__button:hover,
+.md-header__title:hover {
+  color: var(--mc-primary) !important;
+}
+
+/* If you still have tabs enabled, keep them white too */
+.md-tabs {
+  background: #fff !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+.md-tabs__link {
+  color: #334155 !important;
+  font-weight: 600;
+}
+
+.md-tabs__link:hover {
+  color: var(--mc-primary) !important;
+}
+
+.md-tabs__item--active .md-tabs__link {
+  color: var(--mc-primary) !important;
+}
+
+/* =========================================================
+   Better Search UI (no new colors, icons always visible)
+   ========================================================= */
+
+/* ===== Fix search X behavior (do not force always visible) ===== */
+.md-search__button {
+  opacity: 0.65 !important;
+}
+
+.md-search__button:hover {
+  opacity: 1 !important;
+}
+
+/* When search is NOT active, hide the X button */
+.md-search:not([data-md-state="active"]) .md-search__button--reset {
+  display: none !important;
+}
+
+/* Keep icon visible */
+.md-search__icon,
+.md-search__icon svg {
+  color: #334155 !important;
+  fill: currentColor !important;
+  opacity: 1 !important;
+}
+
+/* Align in header properly */
+.md-header__inner {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.md-header__option {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* On dark mode, still keep header white (no layout change) */
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background: #fff !important;
+}
+
+
+/* =========================================================
+   Typography (theme-safe)
+   ========================================================= */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--md-default-fg-color) !important;
+  font-weight: 700;
+}
+
+/* =========================================================
+   HOME HERO (compact)
+   ========================================================= */
+.hero {
+  padding: 1.6rem 1rem !important;
+  margin: 0 0 1rem !important;
+  border-radius: 14px !important;
+  color: #fff !important;
+}
+
+.hero-alt {
+  background: radial-gradient(
+    circle at 15% 20%,
+    var(--mc-primary-light) 0%,
+    var(--mc-primary) 45%,
+    var(--mc-primary-dark) 100%
+  ) !important;
+}
+
+.hero h1 {
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: clamp(1.4rem, 2.6vw, 2.1rem) !important;
+  line-height: 1.2 !important;
+}
+
+.hero p {
+  font-size: 1rem !important;
+  margin: 0.6rem auto 1rem !important;
+  max-width: 720px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem !important;
+  flex-wrap: wrap;
+}
+
+.hero-btn,
+.hero-link,
+.card-btn {
+  text-decoration: none !important;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.hero-btn {
+  padding: 0.55rem 1rem !important;
+  background: #fff !important;
+  color: #111827 !important;
+}
+
+.hero-link {
+  padding: 0.55rem 1rem !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.55) !important;
+}
+
+.hero-btn:hover,
+.hero-link:hover {
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   Cards (theme-safe)
+   ========================================================= */
+.landing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.doc-card {
+  background: var(--md-default-bg-color) !important;
+  color: var(--md-default-fg-color) !important;
+  border: 1px solid var(--md-default-fg-color--lightest) !important;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 22px rgba(2, 8, 23, 0.06);
+}
+
+.doc-card.featured {
+  border-left: 4px solid var(--mc-primary) !important;
+}
+
+.doc-card h3 {
+  margin: 0 0 0.65rem;
+  color: var(--md-default-fg-color) !important;
+}
+
+.doc-card p {
+  margin: 0;
+  min-height: 55px;
+  color: var(--md-default-fg-color--light) !important;
+}
+
+.card-btn {
+  display: inline-block;
+  margin-top: 0.9rem;
+  padding: 0.5rem 1rem;
+  background: transparent !important;
+  border: 1px solid var(--md-default-fg-color--lightest) !important;
+  color: var(--mc-primary) !important;
+}
+
+.card-btn:hover {
+  background: rgba(1, 79, 174, 0.08) !important;
+}
+
+/* =========================================================
+   Setup banner (theme-safe)
+   ========================================================= */
+.setup-banner {
+  border: 1px solid var(--md-default-fg-color--lightest) !important;
+  border-radius: 16px;
+  background: rgba(1, 79, 174, 0.06) !important; /* subtle brand tint */
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+  margin-bottom: 1.6rem;
+}
+
+.setup-banner h3 {
+  margin: 0;
+  color: var(--md-default-fg-color) !important;
+}
+
+.setup-banner p {
+  margin: 0.35rem 0 0;
+  color: var(--md-default-fg-color--light) !important;
+}
+
+.setup-banner .card-btn {
+  background: var(--mc-primary) !important;
+  color: #fff !important;
+  border-color: var(--mc-primary) !important;
+  white-space: nowrap;
+}
+
+.setup-banner .card-btn:hover {
+  background: var(--mc-primary-dark) !important;
+  border-color: var(--mc-primary-dark) !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+  }
+
+  .setup-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Reduce overall left/right page gutters so content uses more width */
+.md-grid {
+  max-width: 1200px; /* increase from default ~61rem */
+}
+
+/* Make sidebar a bit narrower */
+@media (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: 15rem; /* default is bigger */
+  }
+}
+
+/* Reduce padding inside sidebar */
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+/* Reduce extra space around the sidebar title/logo block */
+.md-nav__title {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+/* Optional: make the sidebar site title smaller (less height/space) */
+.md-nav__title .md-nav__button,
+.md-nav__title .md-nav__ellipsis {
+  font-size: 0.95rem;
+}
