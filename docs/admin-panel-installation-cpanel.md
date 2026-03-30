@@ -252,6 +252,7 @@ This lock must block future access to `/install`.
 
 ### C) AI settings
 - Add OpenAI API key and/or Gemini API key
+- These power AI Property Assistant, AI Property Report, Investment Analysis, Location Analysis, and Legal Checklist
 
 ### Checklist
 - [ ] Firebase configured

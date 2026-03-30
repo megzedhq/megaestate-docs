@@ -4,7 +4,7 @@ Before starting installation, make sure you have all required tools, accounts, a
 
 ## 1) Required Tools
 
-- Latest MegaClassify mobile source code ZIP from CodeCanyon
+- Latest MegaEstate mobile source code ZIP from CodeCanyon
 - **Flutter SDK**
   - Recommended: **3.22.x**
   - Minimum: **3.16+**
@@ -15,7 +15,7 @@ Before starting installation, make sure you have all required tools, accounts, a
 ## 2) Required Accounts
 
 - Firebase account (for Android app registration and `google-services.json`)
-- Google Could Console account (for Google Maps/Places API key )
+- Google Cloud Console account (for Google Maps/Places API key)
 - Play Console account (for Android release publishing)
 - Apple Developer account (for iOS release publishing)
 
@@ -25,12 +25,11 @@ Keep these values prepared before installation:
 
 ### App identity
 - App name (display name)
-- Android package name (example: `com.example.megaclassify`)
-- iOS bundle ID (example: `com.example.megaclassify`)
+- Android package name (example: `com.example.megaestate`)
+- iOS bundle ID (example: `com.example.megaestate`)
 
 ### Backend and URLs
-- API host URL (example: `https://api.example.com`)
-- Frontend URL (example: `https://example.com`)
+- API host URL (example: `https://apimegaestate.megzed.com`)
 
 ### API keys
 - Google Maps API key

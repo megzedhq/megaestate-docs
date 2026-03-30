@@ -7,6 +7,7 @@ After your `/install` wizard is completed and you can login to the admin panel, 
 ## 1) Login to Admin Panel
 
 1. Open the admin login URL shown on the installer finish screen.
+   - Production URL: `https://apimegaestate.megzed.com/admin`
 2. Login with the email + password shown.
 
 ✅ **Expected Result:** You can access the admin dashboard.
@@ -36,7 +37,7 @@ Go to:
 
 ---
 
-## 3) Firebase Authorised Domains (for web auth)
+## 3) Firebase Authorised Domains (for mobile auth)
 
 In Firebase Console:
 
@@ -49,7 +50,7 @@ Add your production domains:
 - admin domain if auth redirects happen there
 
 ### Checklist
-- [ ] Frontend domains are added
+- [ ] Production domains are added
 - [ ] Auth/login no longer throws unauthorized-domain errors
 
 ---
@@ -103,6 +104,8 @@ Go to:
 2. Save.
 3. Run a test generation (if your panel provides test button).
 
+These keys power the AI Property Assistant, AI Property Report, Investment Analysis, Location Analysis, and Legal Checklist features.
+
 ### Checklist
 - [ ] API keys saved (no extra spaces)
 - [ ] Test success
@@ -122,4 +125,3 @@ Go to:
 - Email works (test email)
 - AI works (test prompt)
 - Mobile login + push flow works
-- Web login works without unauthorized-domain errors

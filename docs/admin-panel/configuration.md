@@ -29,7 +29,7 @@ Typical scheduler cron:
 
 - Enforce HTTPS
 - Enable gzip/brotli (if available)
-- Add reasonable client upload size for listing media
+- Add reasonable client upload size for property media
 - Block direct access to sensitive files (`.env`, `.git`)
 
 Sample location protection snippet:
@@ -42,7 +42,7 @@ location ~ /\.(env|git) {
 
 ## 4) CORS/API Considerations
 
-If mobile or web app cannot call API:
+If the mobile app cannot call API:
 
 - Confirm `APP_URL` and API base URL are correct
 - Configure allowed origins in CORS settings
@@ -86,7 +86,7 @@ Ensure `public/storage` points to `storage/app/public`.
 
 ### CORS Errors
 
-- Verify frontend origin is allowed
+- Verify mobile app origin is allowed
 - Clear config cache:
 
 ```bash

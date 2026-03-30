@@ -1,2 +1,2 @@
-# megaclassify-docs
-MegaClassify Documentation (CodeCanyon) – Installation, update, setup checklist, and troubleshooting guides.
+# megaestate-docs
+MegaEstate Documentation (CodeCanyon) – Installation, update, setup checklist, and troubleshooting guides.

@@ -1,6 +1,6 @@
 /* =========================
-   MegaClassify MkDocs Theme
-   - Brand Primary: #014FAE
+   MegaEstate MkDocs Theme
+   - Brand Primary: #14B28C (Teal)
    - Header: WHITE (always)
    - Dark mode: works (no broken light-only blocks)
    ========================= */
@@ -9,9 +9,9 @@
    Brand Tokens + Material tokens
    ------------------------- */
 :root {
-  --mc-primary: #014FAE;
-  --mc-primary-dark: #013B82;
-  --mc-primary-light: #2B78D6;
+  --mc-primary: #14B28C;
+  --mc-primary-dark: #0E8A6B;
+  --mc-primary-light: #2BD4A8;
 
   /* Material overrides */
   --md-primary-fg-color: var(--mc-primary);
@@ -28,7 +28,7 @@
 }
 
 /* =========================================================
-   HEADER = WHITE (ALWAYS)  ✅ fixes your blue bar issue
+   HEADER = WHITE (ALWAYS)
    ========================================================= */
 .md-header,
 .md-header--shadow {
@@ -245,7 +245,7 @@
 }
 
 .card-btn:hover {
-  background: rgba(1, 79, 174, 0.08) !important;
+  background: rgba(20, 178, 140, 0.08) !important;
 }
 
 /* =========================================================
@@ -254,7 +254,7 @@
 .setup-banner {
   border: 1px solid var(--md-default-fg-color--lightest) !important;
   border-radius: 16px;
-  background: rgba(1, 79, 174, 0.06) !important; /* subtle brand tint */
+  background: rgba(20, 178, 140, 0.06) !important;
   padding: 1rem 1.2rem;
   display: flex;
   align-items: center;
@@ -300,13 +300,13 @@
 
 /* Reduce overall left/right page gutters so content uses more width */
 .md-grid {
-  max-width: 1200px; /* increase from default ~61rem */
+  max-width: 1200px;
 }
 
 /* Make sidebar a bit narrower */
 @media (min-width: 76.25em) {
   .md-sidebar--primary {
-    width: 15rem; /* default is bigger */
+    width: 15rem;
   }
 }
 

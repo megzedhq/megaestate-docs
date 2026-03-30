@@ -1,10 +1,10 @@
 # Support
 
-Need help with MegaClassify setup or troubleshooting?
+Need help with MegaEstate setup or troubleshooting?
 
 ## Contact Support
 
-- Email: **megaclassify@gmail.com**
+- Email: **megaestate@gmail.com**
 - WhatsApp: **7032202023**
 
 ## Before Contacting Support

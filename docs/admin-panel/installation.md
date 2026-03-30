@@ -1,6 +1,6 @@
 # Admin Panel Installation Guide (cPanel + Manual .env + Terminal + /install)
 
-This guide is for beginners. Follow each step in order to install the MegaClassify Laravel Admin Panel (API backend) on cPanel shared hosting.
+This guide is for beginners. Follow each step in order to install the MegaEstate Laravel Admin Panel (API backend) on cPanel shared hosting.
 
 ---
 
@@ -202,7 +202,7 @@ chmod -R 775 storage bootstrap/cache
 
 ## 8) Verify API + storage after install
 
-Run these checks before moving to mobile/web setup:
+Run these checks before moving to mobile setup:
 
 ```bash
 curl -I https://api.example.com
@@ -212,7 +212,7 @@ curl https://api.example.com/api/v1/ping
 Also verify image upload path:
 
 - `public/storage` must point to `storage/app/public`
-- Upload one test image from admin panel and confirm it loads on the frontend URL
+- Upload one test image from admin panel and confirm it loads correctly
 
 ### Checklist
 - [ ] API domain responds over HTTPS

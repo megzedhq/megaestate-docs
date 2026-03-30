@@ -1,6 +1,6 @@
 # Complete Installation Guide (From DOCX)
 
-This page mirrors the key implementation steps from `MegaClassify_Installation_Guide_Updated.docx` so all setup instructions are available directly in this documentation site.
+This page mirrors the key implementation steps from `MegaEstate_Installation_Guide_Updated.docx` so all setup instructions are available directly in this documentation site.
 
 ## Part 1 — Laravel Admin Panel (cPanel / aaPanel)
 
@@ -52,7 +52,7 @@ chmod -R 775 storage bootstrap/cache
    - Firebase/Google settings
    - SMTP mail settings
    - Push notifications
-   - AI provider keys (if enabled)
+   - AI provider keys (for AI Property Assistant, AI Property Report, Investment Analysis, Location Analysis, Legal Checklist)
 4. Add scheduler cron job:
 
 ```bash
@@ -85,7 +85,7 @@ flutter pub get
    - `android/app/google-services.json`
    - `ios/Runner/GoogleService-Info.plist`
 
-4. Set API URL to Laravel backend (`https://admin.yourdomain.com/api/v1` style).
+4. Set API URL to Laravel backend (`https://apimegaestate.megzed.com/api/v1` style).
 
 ### 3. Android/iOS build
 Android release:
@@ -102,57 +102,6 @@ iOS release:
 flutter build ios --release
 ```
 
-## Part 3 — React/Vite Web App (Nginx / Apache)
-
-### 1. Build
-Set `.env.production`:
-
-```env
-VITE_API_BASE_URL=https://admin.yourdomain.com/api/v1
-```
-
-Then run:
-
-```bash
-npm install
-npm run build
-```
-
-Upload `dist/` contents to web domain document root.
-
-### 2. SPA routing fallback
-Nginx example:
-
-```nginx
-location / {
-  try_files $uri $uri/ /index.html;
-}
-```
-
-Apache (`.htaccess`) example:
-
-```apache
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-RewriteRule ^ index.html [L]
-```
-
-### 3. `.well-known` deep-link verification files
-Keep these URLs directly accessible with `application/json` content type:
-- `/.well-known/assetlinks.json`
-- `/.well-known/apple-app-site-association`
-
-Validate after deployment:
-
-```bash
-curl -I https://yourdomain.com/.well-known/assetlinks.json
-curl -I https://yourdomain.com/.well-known/apple-app-site-association
-```
-
-Expected: `HTTP 200`, `content-type: application/json`, no redirects.
-
 ## Final cross-platform go-live checklist
 
 ### Admin/API
@@ -168,14 +117,9 @@ Expected: `HTTP 200`, `content-type: application/json`, no redirects.
 - [ ] FCM key configured in admin
 - [ ] Release build succeeds
 - [ ] Real-device login/listing/chat tested
-
-### Web
-- [ ] Correct `VITE_API_BASE_URL`
-- [ ] `npm run build` succeeds
-- [ ] SPA fallback active
-- [ ] HTTPS active
-- [ ] No CORS errors in browser console
+- [ ] AI features working (Property Assistant, Property Report)
+- [ ] QR Poster generation tested
 
 ---
 
-For the original formatted source, see `site/pdf/MegaClassify_Installation_Guide_Updated.docx`.
+For the original formatted source, see `site/pdf/MegaEstate_Installation_Guide_Updated.docx`.

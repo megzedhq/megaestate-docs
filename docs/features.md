@@ -1,10 +1,24 @@
 # Features
 
-MegaClassify is designed as a complete classified marketplace ecosystem.
+MegaEstate is an AI-Powered Real Estate App designed as a complete property marketplace ecosystem.
+
+## AI-Powered Features
+
+- **AI Property Assistant** — intelligent chatbot for property queries and recommendations
+- **AI Property Report** — automated detailed reports for any listed property
+- **Investment Analysis** — AI-driven ROI and investment potential insights
+- **Location Analysis** — neighbourhood scoring, amenities mapping, and commute data
+- **Legal Checklist** — AI-generated legal and compliance checklists for transactions
+
+## QR Poster
+
+- Generate branded QR Poster for any property listing
+- Scannable posters link directly to the property detail page
+- Customisable poster design with property highlights
 
 ## Core Platform
 
-- Multi-category classified listings
+- Multi-category property listings
 - Custom listing attributes and filters
 - Listing moderation workflow
 - Featured and promoted listings
@@ -16,7 +30,7 @@ MegaClassify is designed as a complete classified marketplace ecosystem.
 - Profile management and listing dashboard
 - Listing favorites/bookmarks
 - Search with filters and sorting
-- Responsive layout for desktop and mobile browsers
+- Responsive layout for mobile devices
 
 ## Monetization
 
@@ -31,6 +45,7 @@ MegaClassify is designed as a complete classified marketplace ecosystem.
 - User/listing moderation
 - Role and permission support
 - App and SEO settings panels
+- Admin panel URL: `https://apimegaestate.megzed.com/admin`
 
 ## Integrations
 

@@ -8,7 +8,7 @@
   <a class="card-btn" href="installation/">Get Started</a>
 </div>
 
-The Admin Panel is the core of MegaClassify. Complete these requirements before installation.
+The Admin Panel is the core of MegaEstate. Complete these requirements before installation.
 
 !!! info "CodeCanyon Buyers"
     You must use this online guide together with the documentation included inside your CodeCanyon ZIP package.
@@ -23,7 +23,6 @@ Recommended production stack:
 - PHP 8.1+ with required extensions
 - MySQL 5.7+ or MariaDB 10.4+
 - Composer 2.x
-- Node.js (if frontend assets need rebuild)
 - Valid SSL certificate
 
 ## 2) Required PHP Extensions
