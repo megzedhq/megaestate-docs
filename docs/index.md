@@ -1,7 +1,7 @@
 <div class="hero hero-alt">
-  <p class="hero-tag">MegaClassify Help Center</p>
-  <h1>Launch Faster with MegaClassify Docs</h1>
-  <p>Step-by-step guides for the Admin Panel, Mobile App, and Web deployment workflow.</p>
+  <p class="hero-tag">MegaEstate Help Center</p>
+  <h1>Launch Faster with MegaEstate Docs</h1>
+  <p>Step-by-step guides for the Admin Panel and Mobile App</p>
   <div class="hero-actions">
     <a class="hero-btn" href="admin-panel/prerequisite/">Start Installation</a>
     <a class="hero-link" href="support/">Need Support?</a>
@@ -32,19 +32,9 @@ Configure SDKs, dependencies, and build release bundles for mobile devices.
 
 <div class="doc-card" markdown>
 
-### :material-monitor-cellphone: Web Setup
-
-Deploy the web interface, connect API endpoints, and apply web environment settings.
-
-<a class="card-btn" href="web/prerequisite/">Open Web Guide</a>
-
-</div>
-
-<div class="doc-card" markdown>
-
 ### :material-shape-plus: Product Features
 
-Review key modules and platform capabilities included in MegaClassify.
+AI Property Assistant, AI Property Report, Investment Analysis, Location Analysis, Legal Checklist, QR Poster, and more.
 
 <a class="card-btn" href="features/">Explore Features</a>
 
@@ -73,4 +63,4 @@ Reach support quickly with purchase details, logs, and issue screenshots.
 </div>
 
 !!! info "CodeCanyon Buyers"
-    Use this portal together with your bundled CodeCanyon package documentation for full and accurate setup.
+    Use this portal together with your bundled MegaEstate CodeCanyon package documentation for full and accurate setup.

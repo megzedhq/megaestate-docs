@@ -1,6 +1,6 @@
 # FAQs
 
-## Do I only need this website to install MegaClassify?
+## Do I only need this website to install MegaEstate?
 No. You must also read and follow the documentation included inside the CodeCanyon ZIP package delivered with your purchase.
 
 ## I completed installation but get a 500 error. What should I check?
@@ -20,8 +20,8 @@ Most commonly, the storage symlink is missing. Run:
 php artisan storage:link
 ```
 
-## Mobile/Web app cannot connect to API.
-- Check API base URL is correct (`https://apimega.megzed.com` format)
+## Mobile app cannot connect to API.
+- Check API base URL is correct (`https://apimegaestate.megzed.com` format)
 - Validate CORS configuration in backend
 - Confirm SSL certificate is valid
 - Ensure no firewall blocks API routes

@@ -1,6 +1,6 @@
 # Setup Mobile Application - Installation Steps
 
-This page provides a clear, step-by-step installation flow for the MegaClassify mobile app.
+This page provides a clear, step-by-step installation flow for the MegaEstate mobile app.
 
 ## 1) Unzip and open the project
 
@@ -40,8 +40,7 @@ Update your project configuration values:
 - Android package name
 - iOS bundle ID
 - App display name
-- Host URL / API base URL (example: `https://admin.yourdomain.com/api/v1`)
-- Frontend URL
+- Host URL / API base URL (example: `https://apimegaestate.megzed.com/api/v1`)
 - Google Maps/Places keys
 
 ## 6) Update Android/iOS branding assets
@@ -92,8 +91,14 @@ flutter build ios --release
 Before publishing, test on physical devices:
 
 - Login and registration
-- Listing browse/search
+- Property browse/search
 - Create listing flow
+- AI Property Assistant
+- AI Property Report
+- Investment Analysis
+- Location Analysis
+- Legal Checklist
+- QR Poster generation
 - Chat/messaging
 - Push notifications
 - Deep links / app links (if enabled)

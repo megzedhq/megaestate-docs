@@ -1,6 +1,6 @@
-site_name: MegaClassify Documentation
-site_url: https://megzedhq.github.io/megaclassify-docs/
-site_description: Official documentation portal for MegaClassify
+site_name: MegaEstate Documentation
+site_url: https://megzedhq.github.io/megaestate-docs/
+site_description: Step-by-step guides for MegaEstate Admin Panel and Mobile App
 site_author: Megzed
 edit_uri: ""
 
@@ -19,12 +19,8 @@ nav:
       - ✅ Prerequisite: mobile/prerequisite.md
       - 🧱 Setup & Build: mobile/setup.md
 
-  - 🌐 Setup Web Application:
-      - ✅ Prerequisite: web/prerequisite.md
-      - 🚀 Deploy Steps: web/deploy.md
-
-  - ✨ Features: features.md
-  - 🧾 ChangeLog: changelog.md
+  - ✨ Product Features: features.md
+  - 🧾 Release Notes: changelog.md
   - ❓ FAQs: faq.md
   - 🧑‍💻 Support: support.md
 
@@ -46,16 +42,16 @@ theme:
   palette:
     # Light mode
     - scheme: default
-      primary: blue
-      accent: blue
+      primary: teal
+      accent: teal
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
 
     # Dark mode
     - scheme: slate
-      primary: blue
-      accent: blue
+      primary: teal
+      accent: teal
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
